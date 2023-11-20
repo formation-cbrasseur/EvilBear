@@ -11,8 +11,8 @@ int loadLevel(int level[][NB_BLOCKS_HEIGHT])
 {
     FILE* file = NULL;
     char lineFile[NB_BLOCKS_WIDTH * NB_BLOCKS_HEIGHT + 1] = {0};
-    int i = 0;
-	int j = 0;
+    int i;
+	int j;
 
     file = fopen("Levels", "r");
     if (file == NULL) return 0;
@@ -51,7 +51,8 @@ int loadLevel(int level[][NB_BLOCKS_HEIGHT])
 int saveLevel(int level[][NB_BLOCKS_HEIGHT])
 {
     FILE* file = NULL;
-    int i = 0, j = 0;
+    int i;
+    int j;
 
     file = fopen("Levels", "w");
     if (file == NULL) return 0;

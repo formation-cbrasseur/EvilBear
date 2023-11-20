@@ -14,8 +14,10 @@ void play(SDL_Surface* screen)
     SDL_Rect position, playerPosition;
     SDL_Event event;
 
-    int go_on = 1, remainingObjectives = 0;
-	int	i = 0, j = 0;
+    int go_on = 1;
+    int remainingObjectives = 0;
+	int	i;
+    int j;
     int map[NB_BLOCKS_WIDTH][NB_BLOCKS_HEIGHT] = {0};
 
     wall = IMG_Load("wall.png");

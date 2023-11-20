@@ -17,8 +17,8 @@ void editor(SDL_Surface* screen)
     int LeftclickOngoing = 0;
     int RightclickOngoing = 0;
     int currentObject = WALL;
-    int i = 0;
-    int j = 0;
+    int i;
+    int j;
     int map[NB_BLOCKS_WIDTH][NB_BLOCKS_HEIGHT] = {0};
 
     wall = IMG_Load("wall.png");
