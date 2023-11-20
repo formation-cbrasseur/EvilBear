@@ -86,8 +86,12 @@ void play(SDL_Surface* screen)
 					currentBear = bear[LEFT];
 					movePlayer(map, &playerPosition, LEFT);
 					break;
+                default:
+                    break;
 			}
 			break;
+        default:
+            break;
 	}
 
         SDL_FillRect(screen, NULL, SDL_MapRGB(screen->format, 255, 255, 255));
@@ -115,6 +119,8 @@ void play(SDL_Surface* screen)
                     case FLAME:
                         SDL_BlitSurface(flame, NULL, screen, &position);
                         remainingObjectives = 1;
+                        break;
+                    default:
                         break;
                 }
             }
@@ -215,6 +221,8 @@ void movePlayer(int map[][NB_BLOCKS_HEIGHT], SDL_Rect *pos, int direction)
 
             pos->x++;
             break;
+        default:
+                break;
     }
 }
 

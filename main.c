@@ -48,7 +48,11 @@ int main(int argc, char *argv[])
                     case SDLK_KP2:
                         editor(screen);
                         break;
+                    default:
+                        break;
                 }
+                break;
+            default:
                 break;
         }
 

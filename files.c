@@ -40,6 +40,8 @@ int loadLevel(int level[][NB_BLOCKS_HEIGHT])
                 case '4':              //4: bear
                     level[j][i] = 4;
                     break;
+                default:
+                    break;
             }
         }
     }
