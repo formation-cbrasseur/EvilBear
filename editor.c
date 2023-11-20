@@ -20,8 +20,6 @@ void editor(SDL_Surface* screen)
     int LeftclickOngoing = 0;
     int RightclickOngoing = 0;
     int currentObject = WALL;
-    int i;
-    int j;
     int map[NB_BLOCKS_WIDTH][NB_BLOCKS_HEIGHT] = {0};
 
     wall = IMG_Load("wall.png");
@@ -106,9 +104,9 @@ void editor(SDL_Surface* screen)
 
         SDL_FillRect(screen, NULL, SDL_MapRGB(screen->format, 255, 255, 255));
         
-        for (i = 0 ; i < NB_BLOCKS_WIDTH ; i++)
+        for ( int i = 0 ; i < NB_BLOCKS_WIDTH ; i++)
         {
-            for (j = 0 ; j < NB_BLOCKS_HEIGHT ; j++)
+            for ( int j = 0 ; j < NB_BLOCKS_HEIGHT ; j++)
             {
                 position.x = i * BLOCK_SIZE;
                 position.y = j * BLOCK_SIZE;

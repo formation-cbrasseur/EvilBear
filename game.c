@@ -21,8 +21,6 @@ void play(SDL_Surface* screen)
 
     int go_on = 1;
     int remainingObjectives = 0;
-	int	i;
-    int j;
     int map[NB_BLOCKS_WIDTH][NB_BLOCKS_HEIGHT] = {0};
 
     wall = IMG_Load("wall.png");
@@ -40,9 +38,9 @@ void play(SDL_Surface* screen)
         exit(EXIT_FAILURE);
 
 
-    for (i = 0 ; i < NB_BLOCKS_WIDTH; i++)
+    for ( int i = 0 ; i < NB_BLOCKS_WIDTH; i++)
     {
-        for (j = 0 ; j < NB_BLOCKS_HEIGHT ; j++)
+        for ( int j = 0 ; j < NB_BLOCKS_HEIGHT ; j++)
         {
             if (map[i][j] == BEAR)
             {
@@ -98,9 +96,9 @@ void play(SDL_Surface* screen)
 
         remainingObjectives = 0;
 
-        for (i = 0 ; i < NB_BLOCKS_WIDTH ; i++)
+        for ( int i = 0 ; i < NB_BLOCKS_WIDTH ; i++)
         {
-            for (j = 0 ; j < NB_BLOCKS_HEIGHT ; j++)
+            for ( int j = 0 ; j < NB_BLOCKS_HEIGHT ; j++)
             {
                 position.x = i * BLOCK_SIZE ;
                 position.y = j * BLOCK_SIZE ;
@@ -144,7 +142,7 @@ void play(SDL_Surface* screen)
     SDL_FreeSurface(recipe);
     SDL_FreeSurface(recipe_ready);
     SDL_FreeSurface(flame);
-    for (i = 0 ; i < 4 ; i++)
+    for ( int i = 0 ; i < 4 ; i++)
         SDL_FreeSurface(bear[i]);
 }
 
