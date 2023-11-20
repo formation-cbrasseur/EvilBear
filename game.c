@@ -10,8 +10,13 @@
 void play(SDL_Surface* screen)
 {
     SDL_Surface *bear[4] = {NULL};
-    SDL_Surface *wall = NULL, *recipe = NULL, *recipe_ready = NULL, *flame = NULL, *currentBear = NULL;
-    SDL_Rect position, playerPosition;
+    SDL_Surface *wall = NULL;
+    SDL_Surface *recipe = NULL;
+    SDL_Surface *recipe_ready = NULL;
+    SDL_Surface *flame = NULL;
+    SDL_Surface *currentBear = NULL;
+    SDL_Rect position;
+    SDL_Rect playerPosition;
     SDL_Event event;
 
     int go_on = 1;

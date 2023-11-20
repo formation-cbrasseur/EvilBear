@@ -9,7 +9,10 @@
 
 void editor(SDL_Surface* screen)
 {
-    SDL_Surface *wall = NULL, *recipe = NULL, *flame = NULL, *bear = NULL;
+    SDL_Surface *wall = NULL;
+    SDL_Surface *recipe = NULL;
+    SDL_Surface *flame = NULL;
+    SDL_Surface *bear = NULL;
     SDL_Rect position;
     SDL_Event event;
 

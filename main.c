@@ -11,7 +11,8 @@
 
 int main(int argc, char *argv[])
 {
-  SDL_Surface *screen = NULL, *menu = NULL;
+  SDL_Surface *screen = NULL;
+  SDL_Surface *menu = NULL;
   SDL_Rect menuPosition;
   SDL_Event event;
 
