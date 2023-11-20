@@ -92,7 +92,11 @@ void editor(SDL_Surface* screen)
                     case SDLK_KP4:
                         currentObject = BEAR;
                         break;
+                    default:
+                        break;
                 }
+                break;
+            default:
                 break;
         }
 
@@ -119,6 +123,8 @@ void editor(SDL_Surface* screen)
                         break;
                     case BEAR:
                         SDL_BlitSurface(bear, NULL, screen, &position);
+                        break;
+                    default:
                         break;
                 }
             }
